@@ -1,17 +1,22 @@
-function Wizard(name, house, pet) {
-  this.name = name;
-  this.house = house;
-  this.pet = pet;
+let a = new Set();
 
-  this.greet = () => `I'm ${this.name} from ${this.house}`
+a.add(5);
+a.add(43);
+a.add("WhooHoo");
+a.add({x: 50, y:200});
+console.log(a.size);
 
+for(let x of a.values()){
+  console.log(x);
 }
 
-Wizard.prototype.pet_name;
 
-let harry = new Wizard("Harry Potter", "Gryffindor", "Owl");
+let y = {
+  hello: 1,
+  world: 2
+};
 
-harry.pet_name = "Hedwig";
+console.log(y);
+console.log(y.hello);
 
-console.log(harry.greet());
-console.log(harry);
+var length = a.length();
