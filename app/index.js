@@ -1,18 +1,17 @@
-import mult from './math';
-import {fellowship, total} from './fellowship';
-import Animal from './Animal';
+function Wizard(name, house, pet) {
+  this.name = name;
+  this.house = house;
+  this.pet = pet;
 
-class Lion extends Animal{
-  constructor(name, height, color){
-    super(name, height);
-    this.color = color;
-  }
+  this.greet = () => `I'm ${this.name} from ${this.house}`
 
-  hello(){
-    console.log(`Hi im ${this.name} from Pride Rock!`);
-  }
 }
 
-let son = new Lion("Simba", 2, "Gold");
-console.log(son);
-son.hello();
+Wizard.prototype.pet_name;
+
+let harry = new Wizard("Harry Potter", "Gryffindor", "Owl");
+
+harry.pet_name = "Hedwig";
+
+console.log(harry.greet());
+console.log(harry);
