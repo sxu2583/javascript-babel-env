@@ -77,25 +77,5 @@ module.exports = __webpack_require__(1);
 "use strict";
 
 
-var _fellowship = __webpack_require__(2);
-
-console.log("Why oh why did I die");
-console.log(_fellowship.fellowship);
-console.log("Hello World");
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var fellowship = ['Frodo', 'Sam', 'Gandalf'];
-
-exports.fellowship = fellowship;
-
 /***/ })
 /******/ ]);
